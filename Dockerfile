@@ -1,5 +1,5 @@
 #FROM library/node:6
-FROM ubuntu:xenial
+FROM ubuntu:18.04
 
 MAINTAINER "Daniel Garcia aka (cr0hn)" <cr0hn@cr0hn.com>
 
@@ -9,7 +9,7 @@ RUN apt-get update && apt-get -y upgrade && \
     apt-get install -y nodejs npm netcat
 
 # Fix node links
-RUN ln -s /usr/bin/nodejs /usr/bin/node
+# RUN ln -s /usr/bin/nodejs /usr/bin/node
 
 # Build app folders
 RUN mkdir /app
