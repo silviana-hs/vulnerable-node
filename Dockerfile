@@ -1,5 +1,5 @@
 #FROM library/node:6
-FROM ubuntu:20.04
+FROM ubuntu:18.04
 
 MAINTAINER "Daniel Garcia aka (cr0hn)" <cr0hn@cr0hn.com>
 
